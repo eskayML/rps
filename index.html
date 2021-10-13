@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPC</title>
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        Game of RPS
+    </header>
+
+    <div class="container">
+        <div id="com__scoreboard">
+            0
+        </div>
+        <div id="computer-area">
+            <div class="icon">
+                💻
+            </div>
+            <p class="info">
+                Computer
+            </p>
+        </div>
+        <div id="computer-choice" style="transform: rotate(180deg);"></div>
+        <p id="status__info"></p>
+        <div id="user-choice"></div>
+        <div id="selection_pane">
+            <div><i class="fa fa-hand-rock fa-2x"></i></div>
+            <div><i class="fa fa-hand-paper fa-2x"></i></div>
+            <div><i class="fa fa-hand-scissors fa-2x fa-rotate-90"></i></div>
+        </div>
+        
+        <div id="player__scoreboard">
+            0
+        </div>
+        <div class="player-area">
+            <div class="icon">
+                🧑🏼
+            </div>
+            <p class="info">You</p>
+        </div>
+    </div>
+
+
+    <script src="swal.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

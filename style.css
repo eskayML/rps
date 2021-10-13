@@ -1,0 +1,135 @@
+@font-face {
+    font-family: nunito;
+    src: url('nunito.ttf');
+}
+*{
+    padding: 0;
+    margin:0;
+}
+
+
+body{
+    background-color: #efefef;
+    font-family: nunito, cursive;
+}
+
+header{
+    font-weight: bolder;
+    font-size: 45px;
+    text-shadow: 2px 2px grey;
+    text-align: center;
+
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 500px;
+    border: 1px solid grey;
+    height: 88vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 6px;
+}
+
+
+.icon{
+    width:90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+}
+.info{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+#selection_pane{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+
+
+#selection_pane div{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color:white;
+    box-shadow:2px 2px silver;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+#selection_pane div:hover{
+    box-shadow: 1px 1px grey;
+    transform: scale(0.98);
+    background-color: rgb(211, 203, 203);
+}
+
+#user-choice, #computer-choice{
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 1px 1px 4px  grey, -1px -1px whitesmoke;
+    font-size: 30px;
+    
+}
+
+
+
+#com__scoreboard{
+    width: 65px;
+    height: 65px;
+    background-color: #e24529e5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: inherit;
+    display: flex;
+    font-size:38px;
+    align-items: center;
+    justify-content: center;
+    border-left: 3px dotted white;
+    border-top: 3px dotted white;
+}
+
+#player__scoreboard{
+    display: flex;
+    font-size: 38px;
+    align-items: center;
+    justify-content: center;
+    width: 65px;
+    height: 65px;
+    background-color: rgb(16, 165, 16);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius: inherit;
+    border-right: 3px dotted white;
+    border-bottom: 3px dotted white;
+
+}
+
+#status__info{
+    font-weight: bolder;
+    font-size: 22px;
+    margin-top: 5px;
+}
